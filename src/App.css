@@ -1,0 +1,64 @@
+.closet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.closet-group {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  background-color: rgb(10, 10, 10);
+}
+
+.closet-item {
+  cursor: pointer;
+}
+
+.item-image {
+  max-width: 200px;
+  max-height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.closet-item:hover .item-image {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; 
+  background-color: #6b9ce6; 
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Adjust the height as needed */
+  background-color: #ffcc00; /* Bright yellow color */
+  border-radius: 10px;
+  margin: 2rem auto; /* Centers the container horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the text horizontally */
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: #fff; /* White text color for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
